@@ -9,15 +9,14 @@ server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({
   extended: true
 }))
-server.use((req, res, next) => {
-  res.header('Content-Type', 'application/json; charset=utf-8')
-  next()
+server.get('/', (req, res) => {
+  res.write("Hello, to get user details append /user to the url")
 })
 
 server.get('/user', (req, res) => {
   res.json({
-    id: 1,
-    name: 'John'
+    id: 1283,
+    name: 'Rohith Vallabhaneni'
   })
 })
  

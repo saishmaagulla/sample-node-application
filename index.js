@@ -4,5 +4,5 @@ const ADDRESS = process.env.ADDRESS || "0.0.0.0"
 
 
 server.listen(PORT, ADDRESS, () => {
-  console.log('Provider Service listening on http://'+ADDRESS+':'+ PORT)
+  console.log('Provider Service listening on http://'+ ADDRESS +':'+ PORT)
 })

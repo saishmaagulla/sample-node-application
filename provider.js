@@ -11,13 +11,26 @@ server.use(bodyParser.urlencoded({
 }))
 
 server.get('/', (req, res) => {
-  res.write("Hello, to get user details append /user to the url")
+  res.json({
+    '/user': 'Gives the user details',
+    '/details': 'Gives details of the user'
+  })
 })
 
 server.get('/user', (req, res) => {
   res.json({
     id: 1283,
     name: 'Rohith Vallabhaneni'
+  })
+})
+
+server.get('/details', (req, res) => {
+  res.json({
+    id: 1283,
+    name: 'Rohith Vallabhaneni',
+    DOJ: '12-12-2016',
+    designation: 'ASE',
+    technology: 'DevOps'
   })
 })
  

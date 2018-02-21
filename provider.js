@@ -9,6 +9,7 @@ server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({
   extended: true
 }))
+
 server.get('/', (req, res) => {
   res.write("Hello, to get user details append /user to the url")
 })

@@ -6,7 +6,7 @@ Run
   
  - It starts your application.
  
- With Dockerfile, run the following commands.
+ With Dockerfile, you need only dockerfile. Run the following commands.
     
     sudo docker build -t sampleapp .
     
